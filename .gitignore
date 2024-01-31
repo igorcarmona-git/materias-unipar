@@ -1,0 +1,36 @@
+*.mp4
+*.mp3
+*.mkv
+*.log
+
+# Arquivos de sistema
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos gerados durante a construção
+/dist
+/build
+
+# Arquivos de ambiente
+.env
+/prisma/.env
+/prisma/client/
+/prisma/migration-lock
+
+# Arquivos de configuração
+*.config.js
+*.config.ts
+
+# Dependências de desenvolvimento
+devDependencies/
+/.cache
+/public/
+/.idea
+.DS_Store
+Thumbs.db
+/dev/
+
+# Arquivos temporários
+.DS_Store
+Thumbs.db

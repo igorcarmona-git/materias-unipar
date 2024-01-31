@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 'HEADER PAGE CONFIGURATION' */
+
+#header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 150px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+#header img{
+    height: 130px;
+}
+
+/* 'BODY' BACKGROUND PAGE CONFIGURATION */
+
+#backImage{
+    margin-top: 110px;
+    background-image: url("./images/backfundhospar.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 80vh;
+    width: 75vw;
+    margin-bottom: 100px;
+
+    /* Quando o elemento ultrapassa o tamanho de outra div, ele não permite fazer scroll com o mouse */
+    /* overflow: hidden; */
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* BUTTONS OF 'HEADER' PAGE CONFIGURATION */
+
+.buttons button{
+    padding: 6px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.buttons button:hover{
+    color: yellow;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    font-size: 25px;
+}
+
+#contato-button{
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    padding: 4px;
+    font-size: 24px;
+}
+
+#contato-button:hover{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* 'ASIDE' PAGE CONFIGURATION */
+
+#aside{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 'FOOTER' PAGE CONFIGURATION */
+
+#footer{
+    background-color: black;
+
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer p{
+    font-size: 16px;
+    color: white;
+}

@@ -1,0 +1,72 @@
+body {
+    background: url(festa-2.jpg) no-repeat center fixed;
+    background-size: 100% 150%;
+}
+
+h3 {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+    margin-bottom: 16px;
+}
+
+table,
+th,
+tr,
+td {
+    color: white;
+    background-color: chocolate;
+    font-size: 24px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+table {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.classlink:link {
+    color: chocolate;
+}
+
+.classlink2:link {
+    color: lightgreen;
+}
+
+.classlink:visited {
+    color: chocolate;
+}
+
+.classlink2:visited {
+    color: black;
+}
+
+.classlink:hover {
+    color: red;
+}
+
+.classlink2:hover {
+    color: lightgreen;
+}
+
+.classlink:active {
+    color: yellow;
+}
+
+.classlink2:active {
+    color: yellow;
+}
+
+/* Chamando a "class" que está no arquivo interno */
+.table1 {
+    background-color: chocolate;
+    border: 2px solid black;
+}

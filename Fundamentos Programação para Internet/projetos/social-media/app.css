@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@300;600&display=swap');
+
+/* Foi criado variáveis de determinadas cores para não precisar ter que ficar toda hora colocando durante o projeto */
+:root {
+    --white-light: #FAF7FD;
+    --purple: #BB99DD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Retira o sublinado dos links */
+    text-decoration: none;
+}
+
+body, html{
+    font-family: "Poppins", sans-serif;
+    background: var(--white-light);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Para criar uma cascata, vai pegar todo o contéudo*/
+.container .tree-container{
+    /* Deixa um do lado do outro */
+    display: flex;
+
+    /* Deixa um embaixo do outro */
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-container .avatar{
+    width: 213px;
+    height: 213px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--purple);
+    border-radius: 50%;
+}
+
+.tree-container .avatar img{
+    width: 200px;
+    height: 200px;
+
+    /* Modifica as bordas da imagem para caber dentro do circulo */
+    border-radius: 50%;
+}
+
+.tree-container .insta-user{
+    margin-top: 15px;
+    color: var(--purple);
+}
+
+.tree-container .links-container{
+    margin-top: 17px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.links-container .link{
+    margin-top: 16px;
+
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    width: 325px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+
+    /* 12px cima e baixo e 0 nas laterais */
+    padding: 12px 0;
+
+    /* Não deixa a animação muito rápida de executar */
+    transition: ease 0.3s;
+}
+
+/* hover = Mouse passar por cima do elemento */
+.links-container .link:hover{
+    background: var(--purple);
+    color: var(--white-light);
+    transform: scale(1.1);
+}
+
+.tree-container .socials-container{
+    margin-top: 68px;
+
+    display: grid;
+
+    /* 1fr = É uma fração que os ícones tem para ficar dentro do container */
+    /* repete 3 vezes 1fr, ou seja, 3fr de 1*/
+    grid-template-columns: repeat(3, 1fr);
+
+    /* gap = Espaço que os ícones vão ter entre eles */
+    gap: 29px;
+}
+
+.socials-container .icon{
+    /* Os icons tem um tamanho de 0.9 inicialmente */
+    transform: scale(1.2);
+    transition: ease 0.3s;
+}
+
+.socials-container .icon:hover{
+    /* Ao passar o mouse no icon ele passa a ter um outro tamanho */
+    transform: scale(1.6);
+}

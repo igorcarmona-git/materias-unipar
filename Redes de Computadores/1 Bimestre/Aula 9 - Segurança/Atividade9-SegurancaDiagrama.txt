@@ -1,0 +1,35 @@
+Switches:
+Terá um nome de usuário e senha diferente do padrão.
+
+Roteador Wifi:
+Será uma sub-rede isolada dos servidores e terá usuário e senha.
+
+Server AD: 
+Cada pessoa terá um nome de usuário e senha.
+
+Antivirus: 
+Cada computador terá um Antivirus Kaspersky.
+
+Firewall: 
+Terá um nome de usuário e senha diferente do padrão para cada sub-rede e bloqueio de portas de serviços por segurança, servidor proxy para filtrar conteudo por categorias.
+
+DHCP Server:
+Cada equipamento terá seu endereço IP linkado ao MAC do aparelho.
+
+Cameras:
+Cada bloco de cameras terá seu IP com nome de usuário e senha.
+
+Topologia de rede:
+Será sub-dividida em sub-redes em Classe C.
+Terá link de redundância de internet para não ficar sem rede.
+Não serão utilizados hubs.
+
+Back-up e prevenção:
+Todos os servidores serão feitos back-up diários regularmente.
+Rotina de atualização de todos os programas para evitar vulnerabilidades.
+
+Servidores:
+Serão isolados em uma sala fechada onde a sala só poderá ser acessada com a biometria do administrador, cameras de segurança, uma máquina local fora da rede instalada na sala do servidores com usuário e senha com todos os dados de autenticação da empresa.
+
+Computadores:
+Politicas de grupo e de usuário aplicados, proteção de tela ativida por ausência.

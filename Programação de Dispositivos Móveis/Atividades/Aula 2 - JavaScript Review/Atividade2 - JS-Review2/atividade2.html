@@ -1,0 +1,35 @@
+<!-- 1) Crie um elemento de texto com qualquer informação em sua página html. Depois crie um botão e use códigos JS para alterar o valor desse texto.
+2) Crie uma página html com uma imagem. Depois crie um botão que ao ser clicado altera a imagem que está sendo exibida.
+3) Crie um “h1” na sua página html. Depois crie um botão que oculte o valor que consta nesse “h1”.
+4) Crie um “h1” na sua página html sem texto nenhum. Depois crie um botão que mostre a informação “Exibido via JS”.
+5) Crie uma função que verifica o horário e imprime uma frase em um elemento HTML:
+• Se o horário for de 0h até 9h: “hora do café da manhã!”
+• Se o horário for maior que 9h e até 13h: “hora do almoço!”
+• Se o horário for maior que 13h e até 18h: “hora do café da tarde!”
+• Se o horário for maior que 18h: “hora da janta!”. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+    <script src="js-atividade2.js"></script>
+    <link rel="stylesheet" href="css-atividade2.css">
+</head>
+<body>
+    <div id="welcome">
+        <!-- <h1 class="welcome_text">Bem-vindo!</h1> -->
+        <h1 id="welcome_text">Bem-vindo!</h1>
+    </div>
+    
+    <div id="image">
+        <img src="" alt="">
+    </div>
+    
+    <button type="button" onclick="botao_bemvindo('welcome_text')">Boas-vindas!</button>
+
+    <!-- Usando o 'this' como exemplo, ele altera no próprio botão o texto -->
+    <!-- <button type="button" onclick="this.innerHTML = botao_bemvindo()">Boas-vindas!</button>  -->
+</body>
+</html>

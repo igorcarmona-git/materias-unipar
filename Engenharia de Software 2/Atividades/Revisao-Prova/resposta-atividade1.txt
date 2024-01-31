@@ -1,0 +1,4 @@
+Esses diagramas também identificam as interações entre o sistema e seus agentes. É usado para descrever graficamente um subconjunto do modelo para simplificar a comunicação.
+
+Caso de Uso, exemplo textual:
+	Crie um modelo de caso de uso de um caixa automático de banco (ATM). 

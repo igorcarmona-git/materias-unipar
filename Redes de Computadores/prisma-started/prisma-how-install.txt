@@ -1,0 +1,53 @@
+O Yarn é um gerenciador de pacotes para projetos de desenvolvimento de software. Ele é amplamente utilizado na comunidade de desenvolvedores JavaScript, especialmente em projetos que usam o Node.js
+
+Documentacao:
+	yarn --> https://classic.yarnpkg.com/en/docs/yarn-workflow
+	prisma --> https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql
+	prisma schema --> https://www.prisma.io/docs/concepts/components/prisma-schema
+
+Observacoes: 
+	-D --> Instala somente como desenvolvedor.
+	O script colocado em package.json deixa o compilador mais rápido, deixa mais performatico.
+	yarn prisma init --> Gera toda a estrutura necessária para o projeto, irá gerar os arquivos:
+
+		'.env' --> Deve passar a string de conexão do nosso banco de dados:
+			Vamos utilizar DATABASE_URL="file:;/dev.db" --> cria arquivo de banco dentro da pasta do prisma.
+
+		'prisma/schema.prisma' --> É onde faz todas as tabelas e colunas possíveis do banco de dados
+			Vamos utiulizar provider = "sqlite"
+	yarn dev --> Serve para executar o serviço
+
+Para começar a criar um projeto prisma usando Node:
+	Criar uma pasta onde quer deixar o projeto
+
+	Dentro da pasta da pasta criada:
+		yarn init -y
+		mkdir src
+		
+		yarn add prisma ts-node-dev typescript @types/express -D
+		yarn add @prisma/client express
+	
+		Dentro da pasta, ir em package.json e adicionar o comando:
+			"scripts":{
+				"dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
+			},
+		
+		Criar um arquivo "tsconfig.json":
+			npx tsc --init
+
+		Para instalar e configurar o sqlite junto do prisma: 
+			npx prisma init --datasource-provider sqlite
+		
+		yarn prisma init
+		yarn dev
+
+		Criar dentro do '/src' uma pasta chamada 'lib' dentro dela um arquivo 'prisma.ts', e colocar o seguinte código:
+			import { PrismaClient } from '@prisma/client'
+			
+			export const prisma = new PrismaClient({
+				log: ['query'],
+			})
+
+			Vai ter ajudar a ver todos os log do banco e para usar basta fazer: 
+				import { prisma } from '../lib/prisma'
+	

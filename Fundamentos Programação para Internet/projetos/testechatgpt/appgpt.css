@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(75, 126, 155);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header img{
+    width: 150px;
+    height: 80px;
+}
+
+.buttons button{
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+#sign-up{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#sign-up:hover{
+    background-color: rgb(8, 151, 103);
+    color: white;
+}
+
+.buttons button:hover{
+    color: black;
+    cursor: pointer;
+}
+

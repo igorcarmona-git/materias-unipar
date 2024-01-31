@@ -1,0 +1,19 @@
+Entregar o projeto do trabalho e apresentar nesta terça-feira 19/09/23.
+
+	Especificação:
+		Criar um diagrama de uma rede para uma empresa que possui 20 máquinas conectadas a um servidor que autêntica usuários, que compartilha arquivos e que possui o programa gerencial da empresa. A rede também deve fornecer suporte a clientes que se conectam através de seu notebook na rede Wi-Fi, e também fornecer acesso a internet.
+
+		a) Os tipos de cabeamento que serão utilizados
+		b) Os equipamentos que serão utilizados.
+		c) O canal de frequência que será utilizado (como exemplo, pode-se basear na ocupação dos canais do laboratório)
+	
+
+	No projeto deve ter:
+		1 - montagem do diagrama completo
+		2 - endereçamentos IP
+		3 - sub-rede (demonstrando todas as sub-redes e suas conexões, switches, roteadores, servidores, pcs, etc)
+		4 - segurança da rede (Documento de segurança da rede)
+		5 - Apresentar via slide
+		
+		Obs: Apresentar diagrama completo e num slide/canva mostrar a segurança da rede.
+	

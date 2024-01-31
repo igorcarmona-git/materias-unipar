@@ -1,0 +1,4 @@
+A forma de classe em si consiste em um retângulo com três linhas. A linha superior contém o nome da classe, a linha do meio, os atributos da classe e a linha inferior expressa os métodos ou operações que a classe pode utilizar. Classes e subclasses são agrupadas juntas para mostrar a relação estática entre cada objeto.
+
+Caso de Uso, exemplo textual:
+	Crie um diagrama de classes de um sistema de controle de campeonato.

@@ -1,0 +1,29 @@
+npca.cpl --> Entra direto na interface de rede.
+Default Gateway --> É o endereço IP que vai para a internet, geralmente é o firewall.
+
+127.0.0.1 --> Manda o pacote para a placa de rede e depois a placa manda de volta para o computador (reservado para teste/localhost)
+
+131 para binario (conversão):
+128 64 32 16 8 4 2 1
+ 1  0  0  0  0 0 0 1 --> binário
+
+6 para binario:		
+4 2 1
+1 1 0 --> binário
+
+79 para binário:
+64 32 16 8 4 2 1
+1  0  0  1 1 1 1 --> binário
+
+Classes:
+A --> 1 a 126
+B --> 128 a 191
+C --> 192 a 223
+
+IPs não válidos para internet, pode ser usado localmente: 
+10.x.x.x
+172.16.x.x
+192.168.x.x
+
+IPs da internet, na qual é convertido pelo NAT/Firewall:
+200.x.x.x

@@ -1,0 +1,8 @@
+Site para fazer UML: (Pode autenticar com email da faculdade)
+https://astah.net/downloads/
+
+Site para fazer teste de prototipação:
+https://www.figma.com/
+
+Site de Calculadoras de tamanho de amostras:
+https://www.optimizely.com/sample-size-calculator/#/?conversion=3&effect=20&significance=95

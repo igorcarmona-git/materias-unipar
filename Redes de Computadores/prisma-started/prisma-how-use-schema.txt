@@ -1,0 +1,44 @@
+Observacoes:
+    Voce deve ter o SQLite instalado no computador.
+
+    Sempre que voce fizer alguma alteracao nas tabelas no banco, deve sempre rodar:
+        yarn prisma migrate dev
+
+Para o prisma gerar o nosso banco:
+    yarn prisma migrate dev
+
+    Em seguida, dar um nome a esse banco:
+        initial
+    
+Para visualizar o banco, baixe a extensão no VSCode 'MySQL' e realize uma conexão ao banco:
+    Opcao1:
+        Selecione o banco SQLite.
+        Selecione o arquivo 'dev.db' em './prisma/dev.db'
+    Opcao2:
+        Usar um programa chamado 'Beekeeper Studio'
+    Opcao3:
+        Em um novo terminal, dentro da pasta do projeto, pode-se utilizar:
+            yarn prisma Studio
+        
+        Roda um servidor na porta localhost:'5555'
+
+Após configurar o schema do Banco:
+    Criar um arquivo em './src' chamado: 'modules/users/useCases/CreateUser/CreateUserUseCases.ts'. Isso é bom de ser feito, para separar os diferentes modulos da nossa aplicação
+
+    Criar as DTOs, por TypeScript ser tipada, cria-se em 'modules/users/' uma pasta chamada: '/dtos/CreateUserDTO.ts':
+
+        export interface CreateUserDTO{
+            email: string;
+            name: string;
+        }
+    
+    Prisma Client serve para ajudar a realizar a regra de negócio dos usuários. Para usar o Prisma Client, devemos executar ele primeiro:
+        Criar um arquivo em './src' chamado: 'prisma/client.ts':
+
+            import { PrismaClient } from "@prisma/client";
+
+            export const prisma = new PrismaClient();
+
+parei em 6:30 da aula 
+link: https://www.youtube.com/watch?v=JX9Kz8lvlcw&ab_channel=GBDev
+

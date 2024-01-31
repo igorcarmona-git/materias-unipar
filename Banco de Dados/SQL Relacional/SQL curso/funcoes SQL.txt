@@ -1,0 +1,63 @@
+RANK() OVER (ORDER BY salary) --> Retorna a classificação de cada linha em uma partição do conjunto de resultados.
+
+ROW_NUMBER () OVER <window-specification> --> É usada para atribuir um número de linha a cada registro.
+
+SUBSTR(string, posição_inicial, comprimento) --> Serve para modificar uma string.
+
+ROUND (<number> [, <scale>]) --> Arredonda um número para o inteiro mais próximo.
+
+EXTRACT (<part> FROM <datetime>) --> Extrai e retorna um elemento de uma expressão DATE , TIME ou TIMESTAMP.
+
+TRIM ([<adjust>] str) --> Remove espaços iniciais e/ou finais da string de entrada.
+
+LIST ([ALL | DISTINCT] <expr> [, separator ]) --> retorna uma string que consiste em valores de argumentos não NULL no grupo, separados por uma vírgula ou por um separador fornecido pelo usuário.
+
+CAST (expressão AS tipo_de_dados) --> é usada para converter um valor de um tipo de dados para outro. Isso é especialmente útil quando você precisa garantir que um valor seja tratado como um tipo de dados específico em uma consulta ou operação.
+
+COUNT(*) FROM tabela --> Retorna todos os registros em uma tabela.
+
+COUNT(DISTINCT id_autor) from tabela --> Retorna a qtd de autores em uma tabela sem repetir. Ex: Se tem 10 autores e 3 autores com o mesmo ID, vai retornar 7.
+
+MAX(Preco_Livro) FROM tabela --> Retorna o valor máximo dos registros de uma coluna na tabela.
+
+MIN(Preco_Livro) FROM tabela --> Retorna o valor minimo dos registros de uma coluna na tabela.
+
+AVG(Preco_Livro) FROM tabela --> Retorna a media dos registros de uma coluna na tabela.
+
+SUM(Preco_Livro) FROM tabela --> Retorna o somatorio dos registros de uma coluna na tabela.
+
+--------------------------------------------------------Formatação de data MYSQL 
+DATE_FORMAT(
+		(expressao),
+		'%d-%m-%Y %H:%i:%s'
+	) AS dt_inicio_atendimento
+,DATE_FORMAT(
+		(expressao),
+		'%d-%m-%Y %H:%i:%s'
+	) as dt_fech
+	
+-------------------------------------------------------------------------
+
+CONCAT(s.cdc,' - ', s.nome)	--> Serve para concatenar valores no MySQL 
+
+COALESCE(expressao, 'SEM ATENDENTE') --> Se o resultado for nulo, retorna 'SEM ATENDENTE' como valor padrão.
+
+
+--------------------------------------------------------------------------------- TESTES FIREBIRD -----------------------------------------------------
+ 
+SELECT '   ' || TRIM(CURRENT_TIMESTAMP) FROM RDB$DATABASE; --> Remove os espaços em branco das laterais e adiciona um espaço no lado esquerdo.
+
+SELECT CURRENT_TIMESTAMP FROM RDB$DATABASE; --> Traz a data e a hora atual
+
+SELECT SUBSTRING(CURRENT_TIMESTAMP FROM 1 FOR POSITION('.' IN CURRENT_TIMESTAMP) -1) AS data_atual FROM RDB$DATABASE;  --> Formata uma string, percorre da posicao 1 dela até encontrar um ponto.
+
+--formatar data para o jeito brasileiro
+SELECT
+  CURRENT_TIMESTAMP AS data_original,
+  EXTRACT(DAY FROM CURRENT_TIMESTAMP) AS dia,
+  EXTRACT(MONTH FROM CURRENT_TIMESTAMP) AS mes,
+  EXTRACT(YEAR FROM CURRENT_TIMESTAMP) AS ano,
+  (EXTRACT(DAY FROM CURRENT_TIMESTAMP)) || '/' ||
+  (EXTRACT(MONTH FROM CURRENT_TIMESTAMP)) ||'/'||
+  (EXTRACT(YEAR FROM CURRENT_TIMESTAMP)) AS data_completa
+FROM RDB$DATABASE;

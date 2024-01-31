@@ -1,0 +1,38 @@
+async --> 	Cria uma função assincrona, uma função que só vai para a próxima linha
+		se receber algum valor. 
+
+await --> 	É usado pela função async para sinalizar onde voce quer esperar a resposta
+		para executar a próxima linha.
+
+Throw new Error('') --> Ele força uma exceção de erro e traz para o catch, usando try-catch
+			(tratamento de erros).
+
+{Object.keys(data).length > 0 && (
+    <div className="mt-10 bg-slate-100 text-cyan-950 p-10 rounded-md items-center flex flex-col">		<h2 className="text-3xl mb-4">CEP: {data.cep}</h2>
+)}
+
+------------------------------------------------------------
+
+Na pasta do projeto:
+	npm run dev --> 	
+		Comando para rodar o projeto.
+
+	npx create-next-app@latest nomeprojeto --> 	
+		Comando para criar um projeto react.
+
+	npm install axios --> 	
+		Comando para instalar biblioteca para consumir APIs.
+		
+		Por o código na pasta do projeto api/api.ts:
+			// Importa o Axios para fazer requisições HTTP.
+			import axios from "axios";
+
+			// Cria uma instância do Axios configurada com a baseURL do ViaCEP.
+			const api = axios.create({baseURL: "https://viacep.com.br/ws/",})
+
+			// Exporta a instância do Axios configurada para uso em outros lugares do código.
+			export default api;
+
+	npm install react-icons -->	
+		Comando para instalar icones do react.
+		Site de ícones: https://react-icons.github.io/react-icons/

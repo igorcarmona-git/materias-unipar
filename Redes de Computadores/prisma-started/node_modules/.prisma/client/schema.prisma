@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User{
+  id String @id @default(uuid())
+  email String @unique 
+  name String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  //Um usuario pode ter varios filmes, e está fazendo relacao de user para tabela MovieRent
+  movie_rent MovieRent[] @relation("user") 
+
+  //Quando o prisma criar a tabela no banco, renomeia a tabela como 'users'
+  @@map("users")
+}
+
+model Movie{
+  id String @id @default(uuid())
+  title String @unique
+  duration Int
+  release_date DateTime
+  movie_rent MovieRent[] @relation("movie")
+
+  @@map("movies")
+}
+
+// Para relações Many-to-Many, necessitamos de uma tabela nova
+model MovieRent{
+  //Esse campo não vai para o banco de dados, somente serve para o prisma entender o relacionamento.
+  user User @relation("user", fields: [userId], references: [id]) 
+  userId String
+  movie Movie @relation("movie", fields: [movieID], references: [id])
+  movieID String
+
+  //Não faz sentido criar um ID novo para movieRent usando "id String @id @default(uuid())" sendo que esta sendo feito só uma relacao entre as tabelas, no codigo abaixo, utiliza-se dois IDs como um proprio
+  @@id([userId, movieID])
+  @@map("movie_rent")
+}

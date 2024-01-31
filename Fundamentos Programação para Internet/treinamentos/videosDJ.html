@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DJ IGOR CARMONA</title>
+
+    <!-- Utilizando o CSS Externo abaixo para definir o style de todos os elementos da página -->
+    <link rel="stylesheet" href="Layout darkness.css">
+
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #cabecalho {
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            background: url(Fundo-site-2.jpeg);
+            background-size: 50% 190%;
+        }
+
+        .logo1 {
+            width: 300px;
+            height: 100px;
+        }
+
+        #menu {
+            position: absolute;
+            top: 100px;
+            height: 98.4vh;
+            /* "vh" é View height de altura e "vw" é View Width de largura. É equivalente a %  */
+            width: 400px;
+            border: 2px solid black;
+            background: url(festa-2.jpg);
+            background-size: 350% 143%;
+        }
+
+        #conteudo {
+            min-height: 300px;
+            margin-left: 400px;
+            height: 100vh;
+        }
+
+        #rodape {
+            height: 100px;
+            width: 100%;
+            position: relative;
+            /* Para eu usar o "bottom" eu devo setar o "position" */
+            bottom: 0;
+            border: 2px solid black;
+            background: url(Fundo-site-2.jpeg);
+            background-size: 50% 180%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div align="center" id="cabecalho">
+        <img class="logo1" src="LOGO BRANCA.png" />
+    </div>
+
+    <br />
+
+    <div id="conteudo">
+
+        <!-- Divisória Central da página -->
+        <div align="center">
+            <h3>Vídeos de apresentações do DJ</h3>
+
+            <br />
+
+            <p>Gravações e vídeos realizados por fãs e film-makers.
+                <br /> <br />
+            </p>
+        </div>
+
+        <!-- Vídeos da página -->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-A7XDmjl_Ck"
+            title="Clique aqui para assistir o vídeo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RAsiMOYCbLs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/chwi7TDGGBw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- Fim da divisória Central da página -->
+
+        <!-- Tabela de links Igor Carmona -->
+
+        <table border="5">
+            <tr>
+                <th>Youtube</th>
+                <th>Instagram</th>
+                <th>Facebook</th>
+            </tr>
+            <tr>
+                <td>
+                    <a class="classlink2" href="https://www.youtube.com/channel/UCrGe-LTTnx_3qv5e4l0Hx2A"
+                        target="_blank" title="Clique aqui para visitar o canal do Youtube do DJ Igor Carmona">Igor
+                        Carmona</a>
+                </td>
+                <td>
+                    <a class="classlink2" href="https://www.instagram.com/igorcarmona_dj/" target="_blank"
+                        title="Clique aqui para visitar o perfil do Instagram do DJ Igor Carmona">Igor
+                        Carmona</a>
+                </td>
+                <td>
+                    <a class="classlink2" href="https://www.facebook.com/igor.carmonadj/" target="_blank"
+                        title="Clique aqui para visitar o perfil pessoal do Facebook do DJ Igor Carmona">Igor
+                        Carmona</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div align="center" id="menu">
+        <img src="Igor2.jpg" width="395">
+
+        <ul>
+            <br /><br /><br />
+
+            <li><a class="classlink" href="videosDJ.html"
+                    title="Ao clicar, você terá acesso a todos os vídeos dos eventos realizados pelo DJ">Vídeos do
+                    DJ</a></li>
+
+            <br /><br /><br />
+
+            <li><a class="classlink" href="fotosDJ.html"
+                    title="Ao clicar, você terá acesso a todas as fotos do DJ">Fotos do DJ</a></li>
+
+            <br /><br /><br />
+
+            <li><a class="classlink" href="localizacao.html"
+                    title="Ao clicar, a localização de trabalho do DJ será exibida">Localização de Studio Musical</a>
+            </li>
+
+            <br /><br /><br />
+
+            <li><a class="classlink" href="Contatos.html"
+                    title="Ao clicar, você terá acesso a equipe de Bookings do DJ para realização de contratos">Contatos/Bookings
+                    - Contratação</a></li>
+        </ul>
+    </div>
+
+    <div align="center" id="rodape">
+        <br />
+        <p style="font-size:24px;">Todos os direitos reservados @2022</p>
+        <a class="classlink" href="https://wa.link/z9xb1k"
+            title="Ao clicar, você entrará em um link direto para contato via WhatsApp">Link para contato na ocorrência
+            de dúvidas ou denúncias de bugs</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-menu">
+        <nav id="menu-principal">
+            <h1>Imagens</h1>
+            <h1>Contatos</h1>
+            <h1>História</h1>
+        </nav>
+    </header>
+    
+    <section id="historia">
+        <div id="historia-conteudo">
+            <h1>Sobre mim</h1>
+            <p>Iniciou sua carreira como DJ no ano de 2018. Aprendeu os conceitos e 
+                a mixagem em si na escola de DJ <strong>AIMEC.</strong>. 
+            </p>
+            <h1>Onde estudou?</h1>
+            <p>Estudou por toda a sua vida em escola pública na cidade de Cianorte-PR, 
+                no Paraná.
+            </p>
+            <h1>Quais são seus gostos?</h1>
+            <p>Ele sempre gostou de <em>música eletrônica</em> desde quando era pequeno.
+                Foi então onde encontrou o gosto em se tornar DJ.
+            </p>
+            <h1>Quais os planos para o futuro?</h1>
+            <p>Pensa em ser reconhecido mundialmente fazendo o que gosta.</p>
+        </div>
+    </section>
+
+    <section id="section-forms">
+        <form action="" id="form1" method="post">
+            <h1>Formulário de Inscrição do curso</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Seu primeiro nome"><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" placeholder="Seu sobrenome completo"><br>
+
+            <label for="data">Data:</label>
+            <input type="date" name="data"><br>
+
+            <input type="submit" name="enviar" id="submit-form1">
+        </form>
+
+        <form action="" id="form2" method="post">
+            <h1>Formulário para eventos privados</h1>
+
+            <label for="nome-evento">Nome do evento:</label>
+            <input type="text" name="nome-evento" placeholder="Nome da casa de show"><br>
+
+            <label for="tipo-evento">Tipo do evento:</label><br>
+            <input type="radio" name="tipo-evento" value="tech-house" id="tech-house">
+            <label for="tech-house">Tech-House</label><br>
+
+            <input type="radio" name="tipo-evento" value="house" id="house">
+            <label for="house">House</label><br>
+
+            <label for="email-cliente">E-mail:</label>
+            <input type="email" name="email-cliente" placeholder="email@dominio.com.br"><br>
+
+            <input type="submit" name="enviar" id="submit-form2">
+        </form>
+
+        <form action="" id="form3" method="post">
+            <h1>Formulário para inscrição de excursões</h1>
+
+            <label for="nome-excursao">Nome da excursão:</label>
+            <input type="text" name="nome-excursao" placeholder="Nome da excursão"><br>
+
+            <label for="data">Data:</label>
+            <input type="date" name="data"><br>
+
+            <label for="cor-excursao">Cor do ônibus:</label>
+            <input type="color" name="cor-excursao"><br>
+
+            <input type="submit" name="enviar" id="submit-form3">
+        </form>
+    </section>
+    <br>
+
+    <footer id="main-footer">
+        <div id="footer-pagina">
+            <span>Todos os direitos reservados!</span><br>
+            <img src="./icones/github.png" alt="Imagem do GitHub" height="30em">
+            <a href="https://github.com/igorcarmona-git" target="_blank">GitHub Profile</a>
+            <img src="./icones/linkedin.png" alt="Imagem do LinkedIn" height="30em">
+            <a href="https://br.linkedin.com/in/igor-carmona-1a884219a" target="_blank">LinkedIn Profile</a>
+        </div>
+    </footer>
+</body>
+</html>

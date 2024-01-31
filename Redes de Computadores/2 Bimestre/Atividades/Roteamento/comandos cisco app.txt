@@ -1,0 +1,18 @@
+sh run
+
+para mostrar todas as interfaces do roteador
+---------------------------------------------------------------------
+
+en
+config t
+int g 0/0
+ip address 192.168.0.1 255.255.255.0
+no shut
+exit
+
+para ligar a interface do roteador.
+
+-----------------------------------------------------------------------
+ip route 192.168.10.1 255.255.255.0 192.168.1.2 255.255.255.0
+
+para criar uma rota da rede 10 para a rede 1

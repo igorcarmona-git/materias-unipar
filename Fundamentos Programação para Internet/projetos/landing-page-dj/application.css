@@ -1,0 +1,64 @@
+body{
+    width: 95%;
+    max-width: 800px;
+    /* Enquanto estiver menor do que 800px, ele assume 95%. Quando chega no máximo ele não aumenta mais. */
+
+    margin: auto; 
+    /* margin: auto --> propriedade que centraliza o elemento desde que tenhamos um tamanho definido */
+
+    background: url(./images/wallpaper-dj.jpg) center;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: #fff;
+}
+
+body p{
+    text-shadow: black 2px 1px;
+}
+
+main {
+    background: #00000060;
+    padding: 8px 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    /* Arredonda as bordas da main */
+}
+
+.logo, .band-name, .headline{
+    text-align: center;
+    margin: 0;
+    text-shadow: black 2px 2px;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.shows{
+    margin: 30px 0;
+    text-align: center;
+    width: 100%;
+    text-shadow: black 2px 2px;
+}
+
+.shows td{
+    padding: 8px;
+    background: #00000050;
+    border-radius: 10px;
+    text-shadow: black 2px 2px;
+}
+
+.shows table{
+    /* Estou dizendo que quero a classe shows e somente o elemento table */
+    background: #ff000047;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    text-shadow: black 2px 2px;
+}
+
+.footer{
+    text-align: center;
+    text-shadow: black 2px 2px;
+}

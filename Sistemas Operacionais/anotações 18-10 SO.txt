@@ -1,0 +1,7 @@
+BUFFER -> área reservada na memória RAM
+
+Quando o BUFFER está cheio, as informações que são gravadas no BUFFER depois
+de cheio ele escreve por cima da informação gravada.
+
+preemptividade ou preempção é a capacidade de tirar de execução um processo 
+em favor de outro.

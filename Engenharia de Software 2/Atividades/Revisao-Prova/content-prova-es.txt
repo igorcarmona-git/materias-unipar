@@ -1,0 +1,6 @@
+Conteudo da prova de Egenharia de Software:
+
+	Requisitos
+	Casos de uso
+	diagrama de classe
+	diagrama de sequência

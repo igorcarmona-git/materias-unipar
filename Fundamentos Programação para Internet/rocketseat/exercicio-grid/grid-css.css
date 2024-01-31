@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+header{
+    background: yellow;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    grid-area: header;
+}
+
+main{
+    background: blue;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+
+    grid-area: main;
+}
+
+aside{
+    background: green;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+
+    grid-area: aside;
+}
+
+footer{
+    background: red;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    /* fr --> fração da tela, usado para responsividade */
+    grid-template-rows: 20vh 70vh 10vh;
+
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer"
+
+    /* grid-gap: 20px; */
+    /* Usado para dar um espaçamento entre os elementos do grid.
+        é um atalho para: grid-row-gap e grid-column-gap --> grid-gap: row column */
+}

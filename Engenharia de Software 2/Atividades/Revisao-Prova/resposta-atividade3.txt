@@ -1,0 +1,4 @@
+Os diagramas de sequência em UML mostram como os objetos interagem uns com os outros e a ordem em que essas interações ocorrem. 
+
+Caso de Uso, exemplo textual:
+	Crie um diagrama de sequencia para os eventos de um gerenciamento de um campeonato de futebol
